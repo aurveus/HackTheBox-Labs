@@ -2,7 +2,7 @@
 
 ## Overview
 
-This lab focused on investigating a suspicious PCAP capture as part of a SOC and incident response scenario. The objective was to identify how the compromise occurred, determine what malware was involved, analyze attacker infrastructure, and investigate encrypted communication using TLS certificates.
+This lab focused on investigating a suspicious PCAP capture as part of a SOC and incident response lab on HTB called "Compromised". The objective was to identify how the compromise occurred, determine what malware was involved, analyze attacker infrastructure, and investigate encrypted communication using TLS certificates.
 
 During the lab, I used both my own investigation process and the official write-up to reinforce concepts that initially confused me, especially during the TLS certificate analysis and identifying the correct malicious infrastructure from the PCAP.
 
@@ -156,6 +156,7 @@ By reviewing the DNS query names, I identified the following domain:
 ```text
 steasteel.net
 ```
+![Domain](domain.png)
 
 This part of the investigation tied together the earlier findings because it showed how the malware still relied on DNS infrastructure before establishing encrypted communication.
 
